@@ -37,6 +37,10 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+
+    -- web3 stuff
+    "nomicfoundation-solidity-language-server",
+    "solhint"
   },
 }
 
