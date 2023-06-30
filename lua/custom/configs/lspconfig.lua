@@ -14,4 +14,8 @@ for _, lsp in ipairs(servers) do
 end
 
 -- put servers with custom config here
-lspconfig["solidity_ls_nomicfoundation"].setup {}
+lspconfig["solidity_ls_nomicfoundation"].setup {
+  cmd = { 'nomicfoundation-solidity-language-server', '--stdio' },
+  filetypes = { 'solidity' },
+  root_dir = lspconfig.util.root_pattern(".git", "package.json"),
+}
